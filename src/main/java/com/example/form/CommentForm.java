@@ -1,0 +1,55 @@
+package com.example.form;
+
+/**
+ * コメント情報を表すフォームクラス.
+ * 
+ * @author yamadadai
+ *
+ */
+public class CommentForm {
+	/**
+	 * 名前
+	 */
+	private String name;
+	/**
+	 * コメント
+	 */
+	private String content;
+	/**
+	 * 記事id
+	 */
+	private String articleId;
+
+	@Override
+	public String toString() {
+		return "CommentForm [name=" + name + ", content=" + content + ", articleId=" + articleId + "]";
+	}
+	
+	public Integer toIntegerArticleId() {
+		return Integer.parseInt(articleId);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String getArticleId() {
+		return articleId;
+	}
+
+	public void setArticleId(String articleId) {
+		this.articleId = articleId;
+	}
+}
